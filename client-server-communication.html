@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Client-Server Communication Process</title>
+  </head>
+  <body>
+    <h1>The Client-Server Communication Process</h1>
+      
+    <p>When clients connect to the server, the server must accept the connection. When the client sends a command and type of the related command to the server, the arguments depending on the type if it has one, the server must parse it, do the appropriate process of the command, send back the client a response about the success of the command, and depending whether or not, the server must also send back the type of the message, and the arguments of that type.</p>
+    
+    <p>When the server communicates with the client after the client is connected, the server must send back the client the response, it's type and its arguments if it has and close the connection to the client. It happens on every command sent from the client.</p>
+    
+    <p>The lifecycle of a command:</p>
+    <ol>
+      <li>The client connects to the server.</li>
+      <li>The server acknowledges the client and accepts the connection.</li>
+      <li>When the client sends a command and type, the server then must parse it and do the appropriate process of the command then send back it the response.</li>
+      <li>Optionally depending on the command, the server must send back the type of the message and the arguments of that type.</li>
+      <li>Finally, close the connection of the client.</li>
+    </ol>
+  </body>
+</html>
